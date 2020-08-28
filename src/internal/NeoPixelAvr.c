@@ -539,8 +539,8 @@ void send_data_16mhz_800(uint8_t* data, size_t sizeData, volatile uint8_t* port,
     volatile uint8_t next;
     volatile uint8_t bit;
 
-    hi = *port | pinMask;
-    lo = *port & ~pinMask;
+    lo = *port | pinMask;
+    hi = *port & ~pinMask;
     next = lo;
     bit = 8;
 
